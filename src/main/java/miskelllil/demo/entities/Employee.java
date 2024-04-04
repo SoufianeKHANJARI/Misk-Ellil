@@ -8,20 +8,28 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table
-public class Employe {
+public class Employee {
     @GeneratedValue
     @Id
-    private Long idEmploye;
-    private String fullName;
+    private Long id;
+    private String name;
     private String phone;
-    private String email;
-    private String address;
+    private String mail;
     private String role;
+    private Boolean status;
+    private String slot;
+    private String gender;
 
+/// On va le remplacer par BeanUtils   ( instance des objets):
+    /*public Employee(Employee employee) {
+        this.idEmployee= employee.idEmployee;
 
+    }*/
 }
