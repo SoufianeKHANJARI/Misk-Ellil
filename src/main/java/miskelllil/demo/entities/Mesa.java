@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
-
 @Entity
 @Table
 @Data
@@ -25,7 +24,6 @@ public class Mesa {
     private String nombreChaise;
     private Boolean isReserved;
     private Boolean isDispo;
-
 
 
 }
